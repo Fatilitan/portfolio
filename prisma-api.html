@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Ekstedt</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles-project.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <h1>Daniel Ekstedt</h1>
+        </a>
+        <nav>
+          <input type="checkbox" class="dropdown" />
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="files/Daniel-cv.pdf"
+                class="btn"
+                >CV</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="projects-display">
+      <div class="container">
+        <h2>Prisma API</h2>
+        <div class="imageContainer" id="bigImages">
+          <img
+            src="images/backend-final/postman-tests.png"
+            alt="react-final-screenshot"
+          />
+          <img
+            src="images/backend-final/prisma schema.png"
+            alt="react-searching"
+          />
+        </div>
+        <div class="textContainer">
+          <p>
+            For my final assignment, I had to set up a relational database using
+            Prisma and develop an API with Express.js. The project simulates the
+            backend of a vacation-rental platform similar to Airbnb, so the
+            relational models included properties, hosts, users, reviews, etc.
+            After initializing and seeding the database with dummy data, I
+            proceeded to write HTTP requests for retrieving, updating, posting,
+            and deleting data in the database. These requests are designed to
+            handle errors appropriately and are implemented with authentication
+            for specific endpoints.
+          </p>
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Fatilitan/backend-final.git"
+              class="btn"
+              ><img src="images/icons/github-btn.svg" alt="github-btn" />github
+              repo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div>
+          <h2>More info</h2>
+          <nav>
+            <ul class="footerMenu">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="files/Daniel-cv.pdf"
+                  class="btn"
+                  >CV</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h2>Contact me</h2>
+          <ul class="contactList">
+            <li>
+              <img src="images/icons/phone.svg" alt="phone icon" />+3134616205
+            </li>
+            <li>
+              <img
+                src="images/icons/mail.svg"
+                alt="mail icon"
+              />danielekstedt01@gmail.com
+            </li>
+            <li>
+              <img src="images/icons/github.svg" alt="github icon" /><a
+                href="https://github.com/Fatilitan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/Fatilitan</a
+              >
+            </li>
+            <li>
+              <img src="images/icons/linkedin.svg" alt="github icon" /><a
+                href="https://www.linkedin.com/in/daniel-ekstedt-1a9505212/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/daniel-ekstedt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>&copy; 2024 Daniel Ekstedt</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

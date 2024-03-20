@@ -1,0 +1,174 @@
+/* header styles */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--black);
+  height: 5rem;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--yellow);
+}
+
+header .container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+header nav .menu {
+  clear: both;
+  overflow: hidden;
+  height: 0;
+  transition: 300ms;
+  margin-top: 5rem;
+  background-color: var(--black);
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  z-index: 99;
+}
+
+header nav input.dropdown {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--black);
+  border-color: var(--black);
+  z-index: 99;
+}
+
+header nav input.dropdown:checked + .menu {
+  height: 100vh;
+}
+
+header nav input.dropdown::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--black);
+  border-color: var(--black);
+  background-image: url("../images/icons/bars-solid.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+header nav .menu li {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--white);
+}
+
+header nav .menu li:last-of-type {
+  border-bottom: none;
+}
+
+header nav .menu li a {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* footer nav */
+
+footer nav .footerMenu li a {
+  display: block;
+  padding: 1rem;
+  transition: 300ms;
+}
+
+footer nav .footerMenu li:hover a {
+  color: var(--yellow);
+}
+
+footer nav .footerMenu li a.btn {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 6rem;
+  text-align: center;
+  transition: 300ms;
+}
+
+footer nav .footerMenu li a.btn:hover {
+  color: var(--black);
+}
+
+/* ++++++++++++++++++++++++++++++++++++ */
+/* DESKTOP STYLES */
+/* ++++++++++++++++++++++++++++++++++++ */
+
+@media (min-width: 800px) {
+  .container {
+    width: 1000px;
+  }
+  header nav input.dropdown {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  header nav .menu {
+    clear: both;
+    overflow: hidden;
+    display: block;
+    width: fit-content;
+    height: max-content;
+    margin: 0;
+    position: relative;
+  }
+
+  header nav .menu li {
+    display: inline-block;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    margin-right: 2rem;
+  }
+
+  header nav .menu li:hover a {
+    color: var(--yellow);
+  }
+
+  header nav .menu li:hover .btn {
+    color: var(--black);
+  }
+
+  header nav .menu li:last-of-type {
+    margin-right: none;
+  }
+
+  header nav .menu li a {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: max-content;
+    transition: 300ms;
+  }
+
+  header nav .menu li .btn {
+    transition: 300ms;
+  }
+}

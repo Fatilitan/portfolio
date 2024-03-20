@@ -1,0 +1,51 @@
+/* footer styles */
+
+footer {
+  background-color: #202020;
+}
+
+footer h2 {
+  padding-top: 3rem;
+}
+
+footer .contactList li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+footer .contactList li img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+footer .container div:last-of-type {
+  padding: 1rem;
+  border-top: 1px solid var(--white);
+}
+
+footer .container div:last-of-type p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+@media (min-width: 1080px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .container > div {
+    width: 50%;
+  }
+  footer .container > div:last-of-type {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  footer .container .contactList {
+    margin-top: 2rem;
+  }
+}
