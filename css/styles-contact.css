@@ -1,0 +1,57 @@
+@import "fonts.css";
+@import "header.css";
+@import "general.css";
+@import "footer.css";
+@import "cards.css";
+
+.contactInfo {
+  background-color: var(--black);
+  padding: 3rem 0 2rem 0;
+}
+
+.contactInfo .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactInfo h2 {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contactInfo a {
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #202020;
+  border-radius: 12px;
+}
+
+.contactInfo a img {
+  display: block;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.contactInfo a h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1080px) {
+  .contactInfo .container {
+    justify-content: space-between;
+  }
+  .contactInfo a {
+    width: 48%;
+    transition: 300ms;
+  }
+  .contactInfo a:hover {
+    background-color: #101010;
+  }
+}
